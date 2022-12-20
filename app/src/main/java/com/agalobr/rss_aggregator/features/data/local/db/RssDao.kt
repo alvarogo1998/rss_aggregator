@@ -7,6 +7,6 @@ import androidx.room.OnConflictStrategy
 @Dao
 interface RssDao {
 
-    @Insert(onConflict = OnConflictStrategy.IGNORE)
+    @Insert
     fun create(rss: RssEntity)
 }
